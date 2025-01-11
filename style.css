@@ -10,7 +10,7 @@ body {
     font-size: 60px;
 }
 
-#navbar {
+#navbar, #Intro {
     margin: auto;
     text-align: center;
 }
@@ -43,4 +43,35 @@ body {
     border-width: 0px;
     transform: translateX(600px);
     font-size: 20px;
+}
+
+#Cat {
+    text-align: center;
+    animation: roll 2s infinite ease-in-out;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+@keyframes roll {
+    0% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    100% { transform: rotate(3deg); }
+}
+
+.Header1 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+.Content {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: system-ui;
+    margin: auto;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    width: 700px;
 }
