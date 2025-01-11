@@ -82,7 +82,17 @@ body {
     font-weight: 600;
 }
 
-.Content {
+.Content1 {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: system-ui;
+    margin: auto;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    width: 700px;
+}
+
+.Content2 {
     color: #ffffff;
     font-size: 15px;
     font-family: system-ui;
