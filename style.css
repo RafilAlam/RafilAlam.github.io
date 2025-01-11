@@ -12,6 +12,13 @@ body {
 
 #navbar, #Intro {
     margin: auto;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#About {
+    width: 700px;
+    margin: auto;
     text-align: center;
 }
 
@@ -66,10 +73,20 @@ body {
     font-weight: bold;
 }
 
+.Header2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
 .Content {
     color: #ffffff;
     font-size: 15px;
     font-family: system-ui;
+    text-align: left;
     margin: auto;
     line-height: 1.8;
     letter-spacing: 0.5px;
