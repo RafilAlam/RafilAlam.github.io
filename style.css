@@ -14,9 +14,13 @@ body {
     text-align: center;
 }
 
+#navbuttons {
+    margin: 0px 650px 0px 0px;
+}
+
 .navbutton {
-    margin: 50px 50px 10px 10px;
-    width: 100px;
+    margin: 30px 15px 0px 0px;
+    width: auto;
     height: 50px;
     font-size: 15px;
     color: #ffffff;
@@ -26,6 +30,7 @@ body {
 
 #home {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
+    transform: translateY(-5px);
     color: #b2def0;
 }
