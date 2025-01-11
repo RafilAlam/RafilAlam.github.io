@@ -20,11 +20,11 @@ body {
 }
 
 .navbutton {
-    margin: 30px 15px 0px 0px;
+    margin: 30px 0px 0px 15px;
     width: auto;
     height: 50px;
-    font-size: 15px;
-    word-spacing: 10px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
     color: #ffffff;
     background-color: transparent;
     border-width: 0px;
@@ -35,4 +35,12 @@ body {
     font-size: 22px;
     transform: translateY(-5px);
     color: #b2def0;
+}
+
+#github {
+    color: #ffffff;
+    background-color: transparent;
+    border-width: 0px;
+    transform: translateX(600px);
+    font-size: 20px;
 }
