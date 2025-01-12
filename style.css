@@ -134,7 +134,6 @@ body {
 }
 
 .containerOuter {
-    background-color: #aad5ff;
     border-radius: 10px;
     width: 100%;
     height: auto;
@@ -174,6 +173,10 @@ body {
     letter-spacing: 0.5px;
 }
 
-.containerHeader::marker {
+#tinkerBullet::marker {
     color: #aad5ff;
+}
+
+#schoolBullet::marker {
+    color: #a5a5a5;
 }
