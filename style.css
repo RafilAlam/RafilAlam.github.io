@@ -22,10 +22,11 @@ body {
     text-align: center;
 }
 
-#About {
+#About, #Experience {
     width: 700px;
     margin: auto;
-    text-align: center;
+    margin-bottom: 200px;
+    text-align: left;
 }
 
 #navbuttons {
@@ -49,7 +50,7 @@ body {
     font-weight: bold;
     font-size: 22px;
     transform: translateY(-5px);
-    color: #b2def0;
+    color: #aad5ff;
 }
 
 #github {
@@ -108,4 +109,71 @@ body {
     line-height: 1.8;
     letter-spacing: 0.5px;
     width: 700px;
+}
+
+#languages {
+    word-spacing: 21px;
+}
+
+.langbutton1, .langbutton2 {
+    background-color: transparent;
+    border-width: 0;
+    color: #ffffff;
+    font-size: medium;
+    height: 50px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.langbutton1::first-letter {
+    color: #aad5ff;
+}
+
+.langbutton2::first-letter {
+    color: #b2a8ff;
+}
+
+.containerOuter {
+    background-color: #aad5ff;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.containerInner {
+    background-color: #0a0a0a;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    transform: translateX(5px);
+    padding-left: 30px;
+}
+
+.containerHeader {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.containerContent {
+    color: #ffffff;
+    margin: 0px 0px 10px -20px;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.containerDetail {
+    color: #d4d4d4;
+    margin: 0px 0px 0px -20px;
+    font-size: 13px;
+    font-family: system-ui;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.containerHeader::marker {
+    color: #aad5ff;
 }
