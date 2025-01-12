@@ -178,5 +178,9 @@ body {
 }
 
 #schoolBullet::marker {
-    color: #a5a5a5;
+    color: #8097ff;
+}
+
+#workBullet::marker {
+    color: #4f6fff;
 }
