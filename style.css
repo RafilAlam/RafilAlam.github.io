@@ -12,26 +12,25 @@ body {
 }
 
 #navbar {
-    margin: auto;
+    text-align: ;
     margin-bottom: 100px;
 }
 
 #Intro {
-    width: 50%;
+    max-width: 700px;
+    padding: 0px 20px;
     margin: auto;
     margin-bottom: 100px;
     text-align: center;
 }
 
 #About, #Experience, #Projects {
-    width: 50%;
+    max-width: 700px;
+    padding: 0px 20px;
+    height: auto;
     margin: auto;
     margin-bottom: 200px;
     text-align: left;
-}
-
-#navbuttons {
-    margin: 0px 0px 0px 100px;
 }
 
 .navbutton {
@@ -56,6 +55,7 @@ body {
     color: #ffffff;
     background-color: transparent;
     border-width: 0px;
+    margin-left: 40%;
     font-size: 20px;
 }
 
@@ -198,7 +198,7 @@ body {
 #footer {
     color: #9ba1a1;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     font-family: system-ui;
     font-size: 15px;
 }
