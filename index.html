@@ -9,13 +9,28 @@
 </head>
 <body>
     <nav id="navbar">
-            <button class="navbutton" id="home" onclick="document.getElementById('navbar').scrollIntoView();">Rafil</button>
-            <button class="navbutton" onclick="document.getElementById('About').scrollIntoView();">About</button>
-            <button class="navbutton" onclick="document.getElementById('Experience').scrollIntoView();">Experience</button>
-            <button class="navbutton" onclick="document.getElementById('Projects').scrollIntoView();">Projects</button>
-            <a href="https://github.com/Memeathon" target=”_blank”><button id="github"><i class="fab fa-github"></i></button></a>
+        <div id="outbar">
+            <div id="bar">
+                <button class="navbutton" id="home" onclick="scrollToElement('Home')">Rafil</button>
+                <button class="navbutton" onclick="scrollToElement('About')">About</button>
+                <button class="navbutton" onclick="scrollToElement('Experience')">Experience</button>
+                <button class="navbutton" onclick="scrollToElement('Projects')">Projects</button>
+
+                <script>
+                    function scrollToElement(id) {
+                        const element = document.getElementById(id);
+                        if (element) {
+                            const offset = 100; // Adjust this value to control spacing
+                            const top = element.getBoundingClientRect().top + window.scrollY - offset;
+                            window.scrollTo({ top, behavior: "smooth" });
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <a href="https://github.com/Memeathon" target=”_blank”><button id="github"><i class="fab fa-github"></i></button></a>
     </nav>
-    <h1 class="Title">Hello, I'm Rafil</h1>
+    <h1 id="Home" class="Title">Hello, I'm Rafil</h1>
     <div id="Cat">
         <pre>
 ⠀⠀⠀⠀⠀⠀⠀⠙⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
