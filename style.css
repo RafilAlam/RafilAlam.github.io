@@ -45,12 +45,36 @@ body {
     color: #ffffff;
     text-align: center;
     font-family: system-ui;
-    margin-top: 80px;
+    margin-top: 150px;
     font-size: 60px;
+}
+
+#profile {
+    display: block;
+    height: 300px;
+    margin: auto;
+    margin-top: 65px;
+    margin-bottom: 45px;
+    border-radius: 20px;
+}
+
+#profile.in-view {
+    animation: fade-in 1s forwards;
+}
+
+#contentImg {
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+#smallcontentImg {
+    height: 150px;
+    margin-bottom: 30px;
 }
 
 #navbar {
     display: flex;
+    white-space: nowrap;
     justify-content: space-between;
     margin-bottom: 100px;
     z-index: 99;
@@ -85,10 +109,10 @@ body {
 
 #About, #Experience, #Projects {
     max-width: 700px;
-    margin: 0px 20px 0px 0px;
     height: auto;
     margin: auto;
-    margin-bottom: 200px;
+    margin-top: 250px;
+    margin-bottom: 250px;
     text-align: left;
 }
 
@@ -102,6 +126,49 @@ body {
     background-color: transparent;
     transform: translateY(-5px);
     border-width: 0px;
+}
+
+.typewriter {
+    display: flex;
+    justify-content: center;
+}
+
+#Home {
+    margin-inline: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#Home.in-view {
+    animation: typing 1.2s steps(22) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    30% {
+        width: 160px;
+        opacity: 1;
+    }
+
+    70% {
+        width: 160px;
+        filter: blur(0);
+    }
+
+    to {
+        width: 425px;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 #home {
@@ -127,6 +194,8 @@ body {
 }
 
 #Cat {
+    margin-top: 50px;
+    margin-bottom: 70px;
     text-align: center;
     animation: roll 2s infinite ease-in-out;
     font-size: 10px;
@@ -147,6 +216,21 @@ body {
     font-weight: bold;
 }
 
+.Header1.in-view {
+    animation: delayed-fade-in 4s forwards;
+}
+
+@keyframes delayed-fade-in {
+    from { opacity: 0; filter: blur(5px); };
+    50% { opacity: 0; filter: blur(2px); };
+    to { opacity: 1 };
+}
+
+@keyframes fade-in {
+    from { opacity: 0; filter: blur(5px); };
+    to { opacity: 1 };
+}
+
 .Header2 {
     color: #ffffff;
     font-size: 30px;
@@ -154,6 +238,11 @@ body {
     text-align: left;
     font-family: system-ui;
     font-weight: 600;
+
+}
+
+.Header2.in-view {
+    animation: fade-in 1s forwards;
 }
 
 .Content1 {
@@ -166,6 +255,10 @@ body {
     letter-spacing: 0.5px;
 }
 
+.Content1.in-view {
+    animation: delayed-fade-in 6s forwards;
+}
+
 .Content2 {
     color: #ffffff;
     font-size: 15px;
@@ -174,6 +267,10 @@ body {
     margin: auto;
     line-height: 1.8;
     letter-spacing: 0.5px;
+}
+
+.Content2.in-view {
+    animation: fade-in 1.5s forwards;
 }
 
 #languages {
@@ -189,6 +286,10 @@ body {
     width: auto;
     border-radius: 20px;
     transition: ease-out 0.2s;
+}
+
+.langbutton1.in-view, .langbutton2.in-view {
+    animation: fade-in 1.5s forwards;
 }
 
 .langbutton1:hover {
@@ -233,6 +334,10 @@ body {
     font-weight: 500;
 }
 
+.containerHeader.in-view {
+    animation: fade-in 1s forwards;
+}
+
 .containerContent {
     color: #ffffff;
     margin: 0px 0px 10px -20px;
@@ -242,6 +347,10 @@ body {
     letter-spacing: 0.5px;
 }
 
+.containerContent.in-view {
+    animation: fade-in 1s forwards;
+}
+
 .containerDetail {
     color: #d4d4d4;
     margin: 0px 0px 0px -20px;
@@ -249,6 +358,10 @@ body {
     font-family: system-ui;
     font-weight: normal;
     letter-spacing: 0.5px;
+}
+
+.containerDetail.in-view {
+    animation: fade-in 1s forwards;
 }
 
 #tinkerBullet::marker {
