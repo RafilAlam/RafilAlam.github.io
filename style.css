@@ -107,7 +107,7 @@ body {
     text-align: center;
 }
 
-#About, #Experience, #Projects {
+#About, #Experience, #Projects, #Achievements {
     max-width: 700px;
     height: auto;
     margin: auto;
