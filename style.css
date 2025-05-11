@@ -10,6 +10,12 @@ html {
 body {
     background-color: hsl(0, 0%, 0%);
     overflow-x: hidden;
+    margin: 0; /* Remove default browser margin */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically if needed */
 }
 
 .navbutton {
@@ -74,29 +80,53 @@ body {
 
 #navbar {
     display: flex;
-    white-space: nowrap;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    z-index: 99;
+    justify-content: space-between; /* Space between navbar and GitHub icon */
+    align-items: center;
+    width: 100%; /* Ensure it spans the full width */
+    padding: 10px 20px; /* Add some padding for spacing */
     position: fixed;
     top: 0;
-    width: 100%;
+    z-index: 99;
+    background-color: transparent; /* Keep the background transparent */
 }
 
 #outbar {
-    margin: 30px;
-    margin-left: 20%;
-    height: fit-content;
-    width: fit-content;
-    background: #181818;
-    border-radius: 10px;
     display: flex;
+    align-items: center;
+    gap: 10px; /* Add spacing between buttons */
+    margin: 30px; /* Position the floating navbar */
+    margin-left: 20%; /* Adjust the position to the left */
+    width: fit-content;
+    background: #181818; /* Gray background for the outline */
+    border-radius: 10px; /* Rounded corners for the outline */
+    padding: 2px; /* Add padding inside the outline */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow */
+}
+
+#github {
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    margin: 0; /* Remove unnecessary margins */
+    cursor: pointer;
+    position: absolute; /* Keep it on the far right */
+    right: 400px; /* Adjust spacing from the right edge */
+    top: 80px; /* Adjust spacing from the top */
+}
+
+#github:hover {
+    color: #aad5ff; /* Change color on hover */
+    transition: color 0.2s ease;
 }
 
 #bar {
-    background:hsl(0, 0%, 0%);
-    margin: 2px 2px 2px 2px;
-    border-radius: 10px;
+    background: hsl(0, 0%, 0%); /* Black background for the navbar itself */
+    margin: 0; /* Remove extra margins */
+    border-radius: 10px; /* Keep rounded corners */
+    padding: 1px 1px; /* Adjust padding to fit snugly around the text */
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
 }
 
 #Intro {
@@ -114,6 +144,13 @@ body {
     margin-top: 250px;
     margin-bottom: 250px;
     text-align: left;
+}
+
+#Intro, #About, #Experience, #Projects, #Achievements {
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Add padding for mobile screens */
+    max-width: 700px; /* Keep a consistent width */
+    text-align: center; /* Center text */
 }
 
 .navbutton {
@@ -176,15 +213,6 @@ body {
     font-size: 22px;
     transform: translateY(-5px);
     color: #aad5ff;
-}
-
-#github {
-    color: #ffffff;
-    background-color: transparent;
-    border-width: 0px;
-    margin: 50px;
-    margin-left: -400%;
-    font-size: 20px;
 }
 
 #github:hover {
@@ -396,6 +424,13 @@ body {
     font-size: 15px;
 }
 
+img, video {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 100%; /* Ensure they don't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Responsive Navbar */
 @media (max-width: 768px) {
     #navbar {
@@ -406,7 +441,7 @@ body {
 
     #outbar {
         margin: 10px 0;
-        width: 100%;
+        width: fit-content;
         display: flex;
         justify-content: center;
     }
@@ -418,13 +453,13 @@ body {
     }
 
     .navbutton {
-        margin: 5px;
+        margin: 0px;
         width: auto;
         text-align: center;
     }
 
     #github {
-        margin: 10px 0;
+        right: 50%; /* Adjust spacing from the right edge */
         font-size: 24px;
         margin-left: 0; /* Fix overlapping issue */
     }
