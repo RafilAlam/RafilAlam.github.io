@@ -437,13 +437,13 @@ img, video {
 
     #bar {
         display: flex;
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
         justify-content: center;
     }
 
     #github {
-        right: 50%; /* Adjust spacing from the right edge */
         font-size: 24px;
-        left: 50%; /* Center the GitHub icon */
+        right: 0%; /* Center the GitHub icon */
         top: 100px; /* Adjust spacing from the top */
     }
 
