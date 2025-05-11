@@ -141,16 +141,9 @@ body {
     max-width: 700px;
     height: auto;
     margin: auto;
-    margin-top: 250px;
-    margin-bottom: 250px;
+    margin-top: 125px;
+    margin-bottom: 125px;
     text-align: left;
-}
-
-#Intro, #About, #Experience, #Projects, #Achievements {
-    margin: 0 auto; /* Center horizontally */
-    padding: 0 20px; /* Add padding for mobile screens */
-    max-width: 700px; /* Keep a consistent width */
-    text-align: center; /* Center text */
 }
 
 .navbutton {
