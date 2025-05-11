@@ -112,7 +112,7 @@ body {
     cursor: pointer;
     position: absolute; /* Keep it on the far right */
     right: 400px; /* Adjust spacing from the right edge */
-    top: 80px; /* Adjust spacing from the top */
+    top: 50px; /* Adjust spacing from the top */
 }
 
 #github:hover {
@@ -432,31 +432,28 @@ img, video {
     #navbar {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
-    }
-
-    #outbar {
-        margin: 10px 0;
-        width: fit-content;
-        display: flex;
-        justify-content: center;
+        margin-left: -14%;
     }
 
     #bar {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .navbutton {
-        margin: 0px;
-        width: auto;
-        text-align: center;
     }
 
     #github {
         right: 50%; /* Adjust spacing from the right edge */
         font-size: 24px;
-        margin-left: 0; /* Fix overlapping issue */
+        left: 50%; /* Center the GitHub icon */
+        top: 100px; /* Adjust spacing from the top */
+    }
+
+    #About, #Experience, #Projects, #Achievements {
+        max-width: 80%; /* Adjust width for smaller screens */
+        margin-top: 50px; /* Reduce top margin */
+        margin-bottom: 50px; /* Reduce bottom margin */
+    }
+    #Intro {
+        max-width: 90%; /* Adjust width for smaller screens */
+        padding: 0px 10px; /* Reduce padding */
     }
 }
