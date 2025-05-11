@@ -93,7 +93,7 @@ body {
 #outbar {
     display: flex;
     align-items: center;
-    gap: 10px; /* Add spacing between buttons */
+    gap: 0px; /* Add spacing between buttons */
     margin: 30px; /* Position the floating navbar */
     margin-left: 20%; /* Adjust the position to the left */
     width: fit-content;
@@ -126,7 +126,7 @@ body {
     border-radius: 10px; /* Keep rounded corners */
     padding: 1px 1px; /* Adjust padding to fit snugly around the text */
     display: flex;
-    gap: 10px; /* Add spacing between buttons */
+    gap: 0px; /* Add spacing between buttons */
 }
 
 #Intro {
@@ -447,7 +447,7 @@ img, video {
         top: 100px; /* Adjust spacing from the top */
     }
 
-    #About, #Experience, #Projects, #Achievements {
+    #profile, #About, #Experience, #Projects, #Achievements {
         max-width: 80%; /* Adjust width for smaller screens */
         margin-top: 50px; /* Reduce top margin */
         margin-bottom: 50px; /* Reduce bottom margin */
